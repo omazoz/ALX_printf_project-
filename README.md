@@ -4,7 +4,7 @@
 ## Collaborators
 - Oumayma Mazoz-  [omazoz](https://github.com/omazoz).
 .
-- B. Hamza Khan -(https://github.com/mrv8x))
+- B. Hamza- [mrv8x](https://github.com/mrv8x))
 
 ## Description
 The goal of this project is to build a simplified version of the printf function in the C programming language.
