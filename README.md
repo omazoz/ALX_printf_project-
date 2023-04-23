@@ -27,20 +27,25 @@ The project directory contains the following files:
 
 `_printf.c`: this file contains the implementation of the custom printf function.
 
-`_put_bin.c`: this file contains the implementation for printing unsigned integers in binary format.
 
+`put_char.c` : this file contains the implementation for printing character
 
-`_put_num.c`: this file contains the implementation for printing decimal and integer values.
+`_strlen.c`: this file contains the implementation for returning the lenght of string.
+
+`print_num.c`: this file contains the implementation for printing decimal and integer values.
 
 `_put_X.c`: this file contains the implementation for printing unsigned integers in uppercase hexadecimal format.
 
 `_put_x.c`: this file contains the implementation for printing unsigned integers in lowercase hexadecimal format.
 
-`_putstr.c`: this file contains the implementation for printing null-terminated strings.
+`put_str.c`: this file contains the implementation for printing null-terminated strings.
 
 `_put_o.c`: this file contains the implementation for printing unsigned integer in octal format.
 
 `_put_S.c`: this file contains the implementation for printing string of characters with non-printable characters encoded.
+
+`_put_bin.c`: this file contains the implementation for printing unsigned integers in binary format.
+
 
 `_put_p.c`: this file contains the implementation for printing pointer address.
 
