@@ -11,6 +11,11 @@ int _putstr(char *str)
 	int i;
 	int len = _strlen(str);
 
+	if (!str)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
 	for (i = 0; i < len; i++)
 	{
 		_putchar(str[i]);
