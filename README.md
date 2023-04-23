@@ -3,7 +3,7 @@
 
 ## Collaborators
 - Oumayma Mazoz-  [omazoz](https://github.com/omazoz).
-.
+
 - B. Hamza- [mrv8x](https://github.com/mrv8x).
 
 ## Description
