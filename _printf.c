@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 	case '%':
 	counter = counter + _putchar(format[i]);
 	break;
-	default;
+	default:
 	counter = counter + _putchar(format[i - 1]);
 	counter = counter + _putchar(format[i]);
 	break;
