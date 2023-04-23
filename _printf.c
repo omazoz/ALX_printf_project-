@@ -8,47 +8,42 @@
 int _printf(const char *format, ...)
 {
 	va_list argz;
-	int i = 0, counter = 0;
-	int index = _strlen(format);
+	int counter = 0;
 
 	va_start(argz, format);
-	while ((format[i]) && (i < index))
+	while (*format)
 	{
-	if (format[i] == '%')
-	{
-	i++;
-	switch (format[i])
-	{
-	case 'c':
-	counter = counter + _putchar(va_arg(argz, int));
-	break;
-	case 's':
-	counter = counter + _putstr(va_arg(argz, char *));
-	break;
-	case 'i':
-	counter = counter + print_number(va_arg(argz, int));
-	break;
-	case 'd':
-	counter = counter + print_number(va_arg(argz, int));
-	break;
-	case '%':
-	counter = counter + _putchar(format[i]);
-	break;
-	default:
-	counter = counter + _putchar(format[i - 1]);
-	counter = counter + _putchar(format[i]);
-	break;
-	}
-	i++;
-	}
-	if (i < index)
-	{
-	counter = counter + _putchar(format[i]);
-	i++;
-	}
-	else
-	break;
+		if (*format == '%')
+		{
+			format++;
+			switch (*format)
+			{
+				case 'c':
+					counter += _putchar(va_arg(argz, int));
+					break;
+				case 's':
+					counter += _putstr(va_arg(argz, char *));
+					break;
+				case 'i':
+				case 'd':
+					counter += print_number(va_arg(argz, int));
+					break;
+				case '%':
+					counter += _putchar('%');
+					break;
+				default:
+					counter += _putchar('%');
+					counter += _putchar(*(format - 1));
+					break;
+			}
+		}
+		else
+		{
+			counter += _putchar(*format);
+		}
+		format++;
 	}
 	va_end(argz);
 	return (counter);
 }
+
