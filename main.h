@@ -7,6 +7,7 @@
 #include <limits.h>
 #include <stdarg.h>
 #include <stdio.h>
+int _printf(const char *format, ...);
 int print_number(int num);
 int _strlen(const char *str);
 int _printf(const char *format, ...);
