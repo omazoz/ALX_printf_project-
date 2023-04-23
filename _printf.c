@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
                 counter = counter + _putchar(va_arg(argz, int));
                 break;
             case 's':
-                counter = counter + _puts(va_arg(argz, char *));
+                counter = counter + _putstr(va_arg(argz, char *));
                 break;
             case 'i':
                 counter = counter + print_number(va_arg(argz, int));
