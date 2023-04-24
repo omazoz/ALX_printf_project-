@@ -2,7 +2,7 @@
 
 /**
  * print_int - prints an integer
- * @liist: va_list of arguments from _printf
+ * @list: va_list of arguments from _printf
  * @f: pointer to the struct flags determining
  * if a flag is passed to _printf
  * Return: number of char printed
@@ -49,7 +49,8 @@ void print_num(int num)
 
 	if (num < 0)
 	{
-	_putchar('-');n1 = -num;
+		_putchar('-');
+		n1 = -num;
 	}
 	else
 		n1 = num;
