@@ -28,7 +28,7 @@ typedef struct printHandler
 {
 	char c;
 	int (*f)(va_list ap, flags_t *f);
-} ph;
+} print_han;
 
 /* print_nums */
 int print_int(va_list list, flags_t *f);

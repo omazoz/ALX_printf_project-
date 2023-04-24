@@ -8,14 +8,14 @@ int print_2(va_list list, flags_t *f);
  * depending on the conversion specifier passed to _printf
  * @s: character that holds the conversion specifier
  * Description: the function loops through the structs array
- * func_arr[] to find a match between the specifier passed to _printf
+ * array_func[] to find a match between the specifier passed to _printf
  * and the first element of the struct, and then the approriate
  * printing function
  * Return: a pointer to the matching printing function
  */
 int (*get_print(char s))(va_list, flags_t *)
 {
-	ph func_arr[] = {
+	print_han array_func[] = {
 		{'i', print_int},
 		{'s', print_string},
 		{'c', print_char},
@@ -37,9 +37,9 @@ int (*get_print(char s))(va_list, flags_t *)
 
 	for (i = 0; i < flags; i++)
 	{
-		if (func_arr[i].c == s)
+		if (array_func[i].c == s)
 	{
-		return (func_arr[i].f);
+		return (array_func[i].f);
 }
 }
 return (NULL);
