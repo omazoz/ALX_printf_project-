@@ -25,31 +25,6 @@ The project directory contains the following files:
 
 `README.md`: the file that you're currently reading. It contains information about the project, its goals, and the file structure.
 
-`_printf.c`: this file contains the implementation of the custom printf function.
-
-
-`put_char.c` : this file contains the implementation for printing character
-
-`_strlen.c`: this file contains the implementation for returning the lenght of string.
-
-`print_num.c`: this file contains the implementation for printing decimal and integer values.
-
-`_put_X.c`: this file contains the implementation for printing unsigned integers in uppercase hexadecimal format.
-
-`_put_x.c`: this file contains the implementation for printing unsigned integers in lowercase hexadecimal format.
-
-`put_str.c`: this file contains the implementation for printing null-terminated strings.
-
-`_put_o.c`: this file contains the implementation for printing unsigned integer in octal format.
-
-`_put_S.c`: this file contains the implementation for printing string of characters with non-printable characters encoded.
-
-`_put_bin.c`: this file contains the implementation for printing unsigned integers in binary format.
-
-
-`_put_p.c`: this file contains the implementation for printing pointer address.
-
-`main.h`: this file contains the function prototypes and necessary header files.
 
 ## ABout Files: 
 Each file has a specific purpose and contains the necessary code to implement the custom printf function. The `_printf.c` file is the main file and contains the implementation of the custom printf function. The rest of the files contain helper functions that are called by _printf.c to handle specific conversion specifiers.
